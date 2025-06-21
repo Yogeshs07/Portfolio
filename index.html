@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42472f6aeb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/newLogo.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Prtfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onClick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onClick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Devloper</p>
+                <h1>Hi, I am <span>Yogesh</span> <br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------About------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Software Developer with 2+ years of experience in ASP.NET MVC/Core, Entity Framework, and
+                        full-stack development. Delivered multiple scalable, secure applications and passionate about
+                        building high-quality software solutions. Skilled in clean code practices and agile development.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Backend Development</span><br>ASP.NET Core, MVC, Web API, LINQ, Entity Framework
+                            </li>
+                            <li><span>Frontend Development</span><br>Angular, Vue.js, JavaScript, HTML, CSS, Bootstrap
+                            </li>
+                            <li><span>Tools & DevOps</span><br>Git, Bitbucket, Docker, Postman, Jira</li>
+                            <li><span>Databases</span><br>SQL Server, MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <ul>
+                                <li><span>Jun 2023 – Jun 2025</span><br>Software Developer at Celusion Technologies,
+                                    Thane</li>
+                                <li><span>Responsibilities</span><br>Developed web apps with ASP.NET MVC/Core,
+                                    integrated APIs, and contributed to UAT & production deployment. Built responsive
+                                    UIs and performed API testing with Postman.</li>
+                            </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>PG-DAC</span><br>Centre for Development of Advanced Computing, Mumbai (2022 –
+                                2023)</li>
+                            <li><span>Bachelor of Engineering</span><br>North Maharashtra University, Jalgaon (2010 –
+                                2015)</li>
+                            <li><span>HSC & SSC</span><br>G.D. Mali College & STTK Mahajan High School, Dhule</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Enterprise Web Development</h2>
+                    <p>Experienced in developing scalable enterprise applications using ASP.NET Core and SQL Server.
+                        Delivered solutions like customer onboarding systems and centralized repositories for
+                        large-scale financial platforms.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-plug-circle-bolt"></i>
+                    <h2>API Gateway & System Integration</h2>
+                    <p>Designed secure API gateways enabling seamless third-party integration. Implemented REST, Relay,
+                        and Blend APIs with role-based access, real-time monitoring, and rate-limiting features.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>Deployment & Quality Assurance</h2>
+                    <p>I handle smooth deployments across Dev, UAT, and Production environments using Docker and CI/CD
+                        tools. Rigorous testing with Postman ensures stable, bug-free, and reliable application
+                        releases.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------Portfolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Connect – Secure API Gateway</h3>
+                        <p>Built a secure and scalable API Gateway for financial services. Supported REST, Relay, and
+                            Blend APIs with rate-limiting, monitoring, and third-party integration.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>CIR – Customer Information Repository</h3>
+                        <p>Created a centralized customer repository, integrating data across platforms to reduce KYC
+                            time and improve customer data accessibility.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Onboard – Digital Customer Onboarding</h3>
+                        <p>Developed a digital onboarding solution using AI-based OCR and webcam KYC. Implemented
+                            rule-driven validation and modular workflows to reduce manual effort.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------Contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>yogeshsonawane0712@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9503001661</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Yogesh Sonawane CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" Name="Name" placeholder="Enter Name" required>
+                        <input type="email" Name="Email" placeholder="Enter Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2025 . Made by Yogesh Sonawane</p>
+        </div>
+    </div>
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sideMenu = document.getElementById("sideMenu");
+
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwBWoFuzzM307oGMFFOJL7OL7UISdBo6aLqspYGjZD-dPp7uE4Ovp8ZsdxhQviLLj9B/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
